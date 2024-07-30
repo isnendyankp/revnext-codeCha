@@ -41,6 +41,16 @@ function twoSum(nums, target) {
   }
 }
 
+// penjelasan:
+// - Buat variabel map yang diisi dengan Map
+// - Looping dari index ke-0 sampai panjang array nums
+// - Di dalam looping, buat variabel num yang diisi dengan nums[i]
+// - Buat variabel diff yang diisi dengan target dikurangi num
+// - Cek apakah map memiliki diff
+// - Jika ya, maka kembalikan [map.get(diff), i]
+// - Jika tidak, maka tambahkan num ke map
+// - Kembalikan [map.get(diff), i] jika diff ada di map
+
 // Test Cases
 console.log(twoSum([2, 7, 11, 15], 9)); // [0, 1]
 console.log(twoSum([3, 2, 4], 6)); // [1, 2]
@@ -71,3 +81,21 @@ var twoSum = function(nums, target) {
         }
     }
 };
+
+// Penjelasan:
+
+// - Buat variabel a yang diisi dengan nilai nums[i]
+// - Looping dari index ke-1 sampai panjang array nums
+// - Di dalam looping, cek apakah a ditambah nums[b] sama dengan target
+// - Jika ya, maka kembalikan [i, b]
+// - Kembalikan [0, 1] jika tidak ada hasil yang ditemukan
+// - Jika tidak ada hasil yang ditemukan, maka kembalikan [0, 1]
+// - Jika ada hasil yang ditemukan, maka kembalikan [i, b]
+// - Kembalikan [0, 1] jika tidak ada hasil yang ditemukan
+// - Kembalikan [i, b] jika ada hasil yang ditemukan
+// - Kembalikan [0, 1] jika tidak ada hasil yang ditemukan
+// - Kembalikan [i, b] jika ada hasil yang ditemukan
+// - Kembalikan [0, 1] jika tidak ada hasil yang ditemukan
+// - Kembalikan [i, b] jika ada hasil yang ditemukan
+// - Kembalikan [0, 1] jika tidak ada hasil yang ditemukan
+// - Kembalikan [i, b] jika ada hasil yang ditemukan
